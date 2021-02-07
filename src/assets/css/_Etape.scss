@@ -1,0 +1,103 @@
+.Etape{
+    max-width: 1024px;
+    margin: 0px auto;
+    text-align: center;
+    .Etape-title{
+        font-family: GothamMedium;
+        font-size: 28px;
+        padding: 50px 0px 0px 0px;
+    }
+    .Etape-text-1{
+        font-family: GothamBook;
+        font-size: 16px;
+        color: #000000;
+        line-height: 20px;
+        margin: 20px 0px 0px 0px;
+    }
+    .Etape-text-2{
+        font-family: Clarins-Regular;
+        font-size: 28px;
+        color: #000000;
+        line-height: 1.2;
+    }
+    .Etape-text-3{
+        width: 250px;
+        text-align: center;
+        font-family: GothamMedium;
+        font-size: 20px;
+        color: #be0f34;
+        margin: 15px auto;
+        line-height: 25px;
+    }
+    .Etape-text-4{
+        width: 250px;
+        margin: 0px auto;
+        text-align: center;
+        font-family: GothamBook;
+        font-size: 14px;
+        color: #000000;
+        line-height: 20px;
+    }
+    .Etape-text-5{
+        font-family: GothamMedium;
+        font-size: 11px;
+        color: #ffffff;
+        line-height: 45px;
+    }
+    .Etape-product{
+        position: relative;
+        .Etape-product-item{
+            display: inline;
+            width: 250px;
+            margin: 0px auto;
+            padding: 40px 0px;
+            display: inline-block;
+        }
+        .slick-slide{
+            outline: none;
+            img{
+                display: inline-block;
+            }
+        }
+        .slick-dots{
+            position: absolute;
+            bottom: 5px;
+            li button:before{
+                font-size: 12px;
+            }
+        }
+    }
+    .Etape-btn{
+        width: 180px;
+        background-color: #000000;
+        margin: 10px auto 0px auto;
+        a{
+            display: block;
+            text-decoration: none;
+            color: #ffffff;
+        }
+    }
+}
+
+// =================================
+
+@media (max-width: 768px){
+    .Etape{
+        max-width: 100%;
+        .Etape-title{
+            padding: 40px 0px 0px 0px;
+        }
+    }
+}
+
+@media (max-width: 576px) {
+    .Etape{
+        max-width: 100%;
+        overflow: hidden;
+        .Etape-title{
+            width: 310px;
+            margin: 0px auto;
+            padding: 30px 0px 0px 0px;
+        }
+    }
+}

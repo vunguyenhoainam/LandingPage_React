@@ -1,0 +1,92 @@
+.EtapeThree{
+    background-color: #f2f4ff;
+    .Etape-title{
+        color: #a4a2c9;
+    } 
+    .Etape-text-1{
+        max-width: 770px;
+        margin: 20px auto 0px auto;
+    }
+    .complexe{
+        position: relative;
+        max-width: 900px;
+        margin: 0px auto;
+        .complexe-container{
+            .complexe-square{
+                width: 700px;
+                margin: 35px auto;
+                padding: 10px 20px 15px 20px;
+                border: 4px solid #a4a2c9; 
+                font-family: GothamBook;
+                font-size: 14px;
+                color: #000000; 
+                line-height: 20px;
+                background-color: #f2f4ff;
+                legend{
+                    font-family: GothamBold;
+                    color: #a4a2c9;
+                    div{
+                        display: flex;
+                        margin: 0px 10px;
+                        p{  
+                            font-size: 24px;
+                        }
+                        span{
+                            font-size: 46px;
+                        }
+                    }
+                }
+            }
+        }
+        .Etape-text-2{
+            width: 620px;
+            margin: 0px auto;
+            text-align: center;
+        }
+    }
+}
+
+// ============================================
+
+@media (max-width: 768px){
+    .EtapeThree{
+        .Etape-text-1{
+            width: 100%;
+        }
+        .complexe{
+            width: 100%;
+            .complexe-container{
+                .complexe-square{
+                    margin: 20px auto;
+                    width: 570px;
+                }
+            }
+            .Etape-text-2{
+                width: 100%;
+            }
+        }
+    }
+}
+
+@media (max-width: 576px){
+    .EtapeThree{
+        .Etape-text-1{
+            width: 300px;
+            margin: 15px auto;
+        }
+        .complexe{
+            width: 100%;
+            .complexe-container{
+                .complexe-square{
+                    width: 300px;
+                }
+            }
+            .Etape-text-2{
+                width: 100%;
+            }
+        }
+        .Etape-product{
+            padding: 0px;
+        }
+    }
+}

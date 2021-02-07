@@ -1,0 +1,57 @@
+@font-face{
+    font-family: Clarins-Regular;
+    src: url("../font/Clarins-Regular.ttf") format("truetype"), 
+    url("../font/Clarins-Regular.woff") format("woff"), 
+    url("../font/Clarins-Regular.woff2") format("woff2");
+}
+@font-face{
+    font-family: GothamBold;
+    src: url("../font/Gotham-Bold.ttf") format("truetype"), 
+    url("../font/Gotham-Bold.woff") format("woff"), 
+    url("../font/Gotham-Bold.woff2") format("woff2");
+}
+@font-face{
+    font-family: GothamBook;
+    src: url("../font/Gotham-Book.ttf") format("truetype"), 
+    url("../font/Gotham-Book.woff") format("woff"), 
+    url("../font/Gotham-Book.woff2") format("woff2");
+}
+@font-face{
+    font-family: GothamMedium;
+    src: url("../font/Gotham-Medium.ttf") format("truetype"), 
+    url("../font/Gotham-Medium.woff") format("woff"), 
+    url("../font/Gotham-Medium.woff2") format("woff2");
+}
+
+* {
+    margin: 0px;
+    padding: 0px;
+    // border: 0px
+}
+
+.wrapper-landing{
+    width: 100%;
+}
+
+.container{
+    max-width: 1024px;
+    margin: 0px auto;
+    overflow: hidden;
+    
+}
+
+@media (max-width: 768px){
+    .container{
+        width: 100%;
+        margin: 0px auto;
+        overflow: hidden;
+    }
+}
+@media (max-width: 576px){
+    .container{
+        width: 100%;
+        margin: 0px auto;
+        overflow: hidden;
+    }
+}
+

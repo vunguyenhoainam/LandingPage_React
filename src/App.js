@@ -1,25 +1,25 @@
-import logo from './logo.svg';
-import './App.css';
+import React from 'react'
+import "./assets/css/style.scss";
+import Header from "./components/Header/Header";
+import LaPurete from "./components/LaPurete/LaPurete";
+import EtapeOne from "./components/EtapeOne/EtapeOne";
+import EtapeTwo from "./components/EtapeTwo/EtapeTwo";
+import LeDomaine from "./components/LeDomaine/LeDomaine";
+import EtapeThree from "./components/EtapeThree/EtapeThree";
+import Tout from "./components/Tout/Tout";
 
-function App() {
+export default function App(){
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+    <section class="wrapper-landing">
+      <section class="container">
+        <Header/>
+        <LaPurete/>
+        <EtapeOne/>
+        <EtapeTwo/>
+        <LeDomaine/>
+        <EtapeThree/>
+        <Tout/>
+      </section>
+    </section>
+  )
 }
-
-export default App;

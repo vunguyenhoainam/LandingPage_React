@@ -1,0 +1,86 @@
+.Tout{
+    max-width: 1024px;
+    margin: 0 auto;
+    &-container{
+        display: flex;
+        max-width: 920px;
+        margin: 0 auto;
+        padding: 30px 0 40px 0;
+        .Tout-content{
+            width: 55%;
+            margin-right: 40px;
+            &-header{
+                display: flex;
+                justify-content: space-between;
+                p{
+                    font-family: Clarins-Regular;
+                    font-size: 35px;
+                    color: #be0f34;
+                }
+            }
+            &-text-1{
+                padding-right: 50px;
+                font-family: GothamBook;
+                font-size: 16px;
+                color: #000000;
+                line-height: 20px;
+                &:last-child{
+                    margin-top: 25px;
+                    background-color: #f0cfba;
+                    padding: 25px 40px 25px 35px;
+                    p{
+                        margin-bottom: 20px;
+                    }
+                    span{
+                        font-weight: bold;
+                    }
+                }
+            }
+        }
+        .Tout-iframe{
+            width: 45%;
+            iframe{
+                width: 100%;
+                height: 100%;
+            }
+        }
+    }
+}
+
+@media (max-width: 768px) {
+    .Tout{
+        &-container{
+            max-width: 720px;
+        }
+    }
+}
+
+@media (max-width: 576px) {
+    .Tout{
+        padding: 0 15px;
+        &-container{
+            display: block;
+            text-align: center;
+            .Tout-content{
+                width: 100%;
+                &-header{
+                    display: block;
+                    img{
+                        display: none;
+                    }
+                }
+                &-text-1{
+                    padding: 25px 0;
+                    &:last-child{
+                        margin-top: 0;
+                    }
+                }
+            }
+            .Tout-iframe{
+                margin-top: 10px;
+                width: 100%;
+                height: 250px;
+            }
+        }
+    }
+}

@@ -1,0 +1,946 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+  display: block;
+}
+
+body {
+  line-height: 1;
+}
+
+ol, ul {
+  list-style: none;
+}
+
+blockquote, q {
+  quotes: none;
+}
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: "";
+  content: none;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+@font-face {
+  font-family: Clarins-Regular;
+  src: url("../font/Clarins-Regular.ttf") format("truetype"), url("../font/Clarins-Regular.woff") format("woff"), url("../font/Clarins-Regular.woff2") format("woff2");
+}
+@font-face {
+  font-family: GothamBold;
+  src: url("../font/Gotham-Bold.ttf") format("truetype"), url("../font/Gotham-Bold.woff") format("woff"), url("../font/Gotham-Bold.woff2") format("woff2");
+}
+@font-face {
+  font-family: GothamBook;
+  src: url("../font/Gotham-Book.ttf") format("truetype"), url("../font/Gotham-Book.woff") format("woff"), url("../font/Gotham-Book.woff2") format("woff2");
+}
+@font-face {
+  font-family: GothamMedium;
+  src: url("../font/Gotham-Medium.ttf") format("truetype"), url("../font/Gotham-Medium.woff") format("woff"), url("../font/Gotham-Medium.woff2") format("woff2");
+}
+* {
+  margin: 0px;
+  padding: 0px;
+}
+
+.wrapper-landing {
+  width: 100%;
+}
+
+.container {
+  max-width: 1024px;
+  margin: 0px auto;
+  overflow: hidden;
+}
+
+@media (max-width: 768px) {
+  .container {
+    width: 100%;
+    margin: 0px auto;
+    overflow: hidden;
+  }
+}
+@media (max-width: 576px) {
+  .container {
+    width: 100%;
+    margin: 0px auto;
+    overflow: hidden;
+  }
+}
+.Header {
+  max-width: 1024px;
+  height: 430px;
+  margin: 0px auto;
+  background-color: #f3f5fb;
+  background-image: url("../images/Material_01.png");
+  background-repeat: no-repeat;
+  display: flex;
+  justify-content: space-between;
+  position: relative;
+}
+.Header-logo {
+  position: absolute;
+  top: 20px;
+  right: 0px;
+}
+.Header-left {
+  width: 550px;
+}
+.Header-right {
+  width: 440px;
+}
+.Header-right .Header-right-content {
+  position: absolute;
+  top: 150px;
+}
+.Header-right .Header-right-content .Header-right-text-1 {
+  font-family: GothamMedium;
+  font-size: 16px;
+  color: #be0f34;
+  line-height: 25px;
+}
+.Header-right .Header-right-content .Header-right-text-2 {
+  font-family: Clarins-Regular;
+  font-size: 40px;
+  color: #000000;
+}
+.Header-right .Header-right-content .Header-right-text-3 {
+  font-family: GothamBook;
+  font-size: 18px;
+  color: #000000;
+  line-height: 25px;
+}
+
+@media (max-width: 768px) {
+  .Header {
+    max-width: 100%;
+    height: 350px;
+    overflow: hidden;
+    background-size: auto 115%;
+  }
+  .Header-logo {
+    position: absolute;
+    top: 15px;
+    right: 0px;
+  }
+  .Header-logo img {
+    width: 250px;
+  }
+  .Header-left {
+    width: 0px;
+  }
+  .Header-right {
+    width: 330px;
+  }
+  .Header-right .Header-right-content {
+    top: 120px;
+  }
+}
+@media (max-width: 576px) {
+  .Header {
+    max-width: 100%;
+    height: 460px;
+    margin: 0px auto;
+    background-color: #f8f9fd;
+    background-image: url("../images/Material_Mobile_01.png");
+    background-repeat: no-repeat;
+    background-size: contain;
+    display: block;
+    justify-content: space-between;
+    position: relative;
+  }
+  .Header-logo {
+    position: absolute;
+    top: 15px;
+    right: 0px;
+  }
+  .Header-logo img {
+    width: 180px;
+  }
+  .Header-left {
+    width: 100%;
+  }
+  .Header-right {
+    width: 100%;
+    text-align: center;
+  }
+  .Header-right .Header-right-content {
+    top: 300px;
+  }
+  .Header-right .Header-right-content .Header-right-text-1 {
+    font-size: 14px;
+    line-height: 25px;
+  }
+  .Header-right .Header-right-content .Header-right-text-2 {
+    font-size: 35px;
+  }
+  .Header-right .Header-right-content .Header-right-text-3 {
+    font-size: 16px;
+    line-height: 35px;
+  }
+}
+.LaPurete {
+  max-width: 1024px;
+  height: 355px;
+  margin: 0px auto;
+  background-image: url("../images/Material_02.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+}
+.LaPurete-content {
+  width: 860px;
+  height: 250px;
+  position: absolute;
+  top: 55px;
+  left: 50%;
+  transform: translateX(-50%);
+  background-color: #ffffff;
+  text-align: center;
+}
+.LaPurete-content .LaPurete-text-1 {
+  font-family: Clarins-Regular;
+  font-size: 35px;
+  color: #be0f34;
+  padding-top: 15px;
+}
+.LaPurete-content .LaPurete-text-2 {
+  font-family: GothamBook;
+  font-size: 16px;
+  color: #000000;
+  padding-top: 15px;
+  line-height: 20px;
+}
+
+@media (max-width: 768px) {
+  .LaPurete {
+    max-width: 100%;
+  }
+  .LaPurete-content {
+    width: 650px;
+  }
+}
+@media (max-width: 576px) {
+  .LaPurete {
+    width: 100%;
+    height: 485px;
+    margin: 0px auto;
+    background-image: url("../images/Material_Mobile_02.png");
+  }
+  .LaPurete-content {
+    width: 355px;
+    height: 430px;
+    top: 12px;
+  }
+  .LaPurete-content .LaPurete-text-1 {
+    padding: 35px 15px 15px 15px;
+  }
+  .LaPurete-content .LaPurete-text-2 {
+    padding: 15px;
+  }
+}
+.Etape {
+  max-width: 1024px;
+  margin: 0px auto;
+  text-align: center;
+}
+.Etape .Etape-title {
+  font-family: GothamMedium;
+  font-size: 28px;
+  padding: 50px 0px 0px 0px;
+}
+.Etape .Etape-text-1 {
+  font-family: GothamBook;
+  font-size: 16px;
+  color: #000000;
+  line-height: 20px;
+  margin: 20px 0px 0px 0px;
+}
+.Etape .Etape-text-2 {
+  font-family: Clarins-Regular;
+  font-size: 28px;
+  color: #000000;
+  line-height: 1.2;
+}
+.Etape .Etape-text-3 {
+  width: 250px;
+  text-align: center;
+  font-family: GothamMedium;
+  font-size: 20px;
+  color: #be0f34;
+  margin: 15px auto;
+  line-height: 25px;
+}
+.Etape .Etape-text-4 {
+  width: 250px;
+  margin: 0px auto;
+  text-align: center;
+  font-family: GothamBook;
+  font-size: 14px;
+  color: #000000;
+  line-height: 20px;
+}
+.Etape .Etape-text-5 {
+  font-family: GothamMedium;
+  font-size: 11px;
+  color: #ffffff;
+  line-height: 45px;
+}
+.Etape .Etape-product {
+  position: relative;
+}
+.Etape .Etape-product .Etape-product-item {
+  display: inline;
+  width: 250px;
+  margin: 0px auto;
+  padding: 40px 0px;
+  display: inline-block;
+}
+.Etape .Etape-product .slick-slide {
+  outline: none;
+}
+.Etape .Etape-product .slick-dots {
+  position: absolute;
+  bottom: 5px;
+}
+.Etape .Etape-product .slick-dots li button:before {
+  font-size: 12px;
+}
+.Etape .Etape-btn {
+  width: 180px;
+  background-color: #000000;
+  margin: 10px auto 0px auto;
+}
+.Etape .Etape-btn a {
+  display: block;
+  text-decoration: none;
+  color: #ffffff;
+}
+
+.EtapeOne .Etape-title {
+  color: #eca647;
+}
+.EtapeOne .Etape-text-1 {
+  max-width: 770px;
+  margin: 20px auto 0px auto;
+}
+.EtapeOne .complexe {
+  position: relative;
+  margin: 0px auto;
+}
+.EtapeOne .complexe .complexe-container {
+  max-width: 900px;
+  margin: 0px auto;
+  display: flex;
+  justify-content: space-between;
+}
+.EtapeOne .complexe .complexe-container .complexe-left p {
+  position: absolute;
+  top: 80px;
+  left: 10px;
+  font-family: GothamBook;
+  font-size: 12px;
+  color: #000000;
+}
+.EtapeOne .complexe .complexe-container .complexe-right {
+  position: absolute;
+  right: 38px;
+}
+.EtapeOne .complexe .complexe-container .complexe-right p {
+  position: absolute;
+  bottom: 95px;
+  right: -10px;
+  font-family: GothamBook;
+  font-size: 12px;
+  color: #000000;
+}
+.EtapeOne .complexe .complexe-container .complexe-square {
+  position: absolute;
+  width: 700px;
+  top: 60px;
+  left: 50%;
+  transform: translate(-50%);
+  padding: 10px 20px 15px 20px;
+  border: 4px solid #eca647;
+  font-family: GothamBook;
+  font-size: 14px;
+  color: #000000;
+  line-height: 20px;
+  background-color: #fbfdfe;
+  z-index: 1;
+}
+.EtapeOne .complexe .complexe-container .complexe-square legend {
+  font-family: GothamBold;
+  color: #eca647;
+}
+.EtapeOne .complexe .complexe-container .complexe-square legend div {
+  display: flex;
+  margin: 0px 10px;
+}
+.EtapeOne .complexe .complexe-container .complexe-square legend div p {
+  font-size: 24px;
+}
+.EtapeOne .complexe .complexe-container .complexe-square legend div span {
+  font-size: 46px;
+}
+.EtapeOne .complexe .Etape-text-2 {
+  width: 620px;
+  position: absolute;
+  left: 50%;
+  bottom: -5px;
+  transform: translateX(-50%);
+}
+
+.EtapeTwo {
+  background-color: #f3f9ef;
+}
+.EtapeTwo .Etape-title {
+  color: #96c59b;
+}
+.EtapeTwo .Etape-text-1 {
+  max-width: 770px;
+  margin: 20px auto 0px auto;
+}
+.EtapeTwo .lextrailt {
+  position: relative;
+  max-width: 900px;
+  height: 250px;
+  margin: 0px auto;
+}
+.EtapeTwo .lextrailt .lextrailt-container {
+  display: flex;
+  justify-content: space-between;
+}
+.EtapeTwo .lextrailt .lextrailt-container .lextrailt-left {
+  position: absolute;
+}
+.EtapeTwo .lextrailt .lextrailt-container .lextrailt-right img {
+  position: absolute;
+  top: 10px;
+  right: -35px;
+}
+.EtapeTwo .lextrailt .lextrailt-container .lextrailt-right p {
+  position: absolute;
+  bottom: 60px;
+  right: -40px;
+  font-family: GothamBook;
+  font-size: 12px;
+  color: #000000;
+}
+.EtapeTwo .lextrailt .lextrailt-container .lextrailt-square {
+  width: 700px;
+  position: absolute;
+  top: 40px;
+  left: 50%;
+  transform: translate(-50%);
+  padding: 10px 20px 15px 20px;
+  border: 4px solid #96c59b;
+  font-family: GothamBook;
+  font-size: 14px;
+  color: #000000;
+  line-height: 20px;
+  background-color: #f3f9ef;
+  z-index: 1;
+}
+.EtapeTwo .lextrailt .lextrailt-container .lextrailt-square legend {
+  font-family: GothamBold;
+  color: #96c59b;
+}
+.EtapeTwo .lextrailt .lextrailt-container .lextrailt-square legend div {
+  display: flex;
+  margin: 0px 10px;
+}
+.EtapeTwo .lextrailt .lextrailt-container .lextrailt-square legend div p {
+  font-size: 24px;
+}
+.EtapeTwo .lextrailt .lextrailt-container .lextrailt-square legend div span {
+  font-size: 46px;
+}
+.EtapeTwo .lextrailt .Etape-text-2 {
+  width: 620px;
+  position: absolute;
+  left: 50%;
+  bottom: 25px;
+  transform: translateX(-50%);
+}
+.EtapeTwo .Etape-product .Etape-product-item:last-of-type img {
+  margin: 24px 0px 0px 0px;
+}
+
+.EtapeThree {
+  background-color: #f2f4ff;
+}
+.EtapeThree .Etape-title {
+  color: #a4a2c9;
+}
+.EtapeThree .Etape-text-1 {
+  max-width: 770px;
+  margin: 20px auto 0px auto;
+}
+.EtapeThree .complexe {
+  position: relative;
+  max-width: 900px;
+  margin: 0px auto;
+}
+.EtapeThree .complexe .complexe-container .complexe-square {
+  width: 700px;
+  margin: 35px auto;
+  padding: 10px 20px 15px 20px;
+  border: 4px solid #a4a2c9;
+  font-family: GothamBook;
+  font-size: 14px;
+  color: #000000;
+  line-height: 20px;
+  background-color: #f2f4ff;
+}
+.EtapeThree .complexe .complexe-container .complexe-square legend {
+  font-family: GothamBold;
+  color: #a4a2c9;
+}
+.EtapeThree .complexe .complexe-container .complexe-square legend div {
+  display: flex;
+  margin: 0px 10px;
+}
+.EtapeThree .complexe .complexe-container .complexe-square legend div p {
+  font-size: 24px;
+}
+.EtapeThree .complexe .complexe-container .complexe-square legend div span {
+  font-size: 46px;
+}
+.EtapeThree .complexe .Etape-text-2 {
+  width: 620px;
+  margin: 0px auto;
+  text-align: center;
+}
+
+@media (max-width: 768px) {
+  .Etape {
+    max-width: 100%;
+  }
+  .Etape .Etape-title {
+    padding: 40px 0px 0px 0px;
+  }
+
+  .EtapeOne .Etape-text-1 {
+    max-width: 100%;
+  }
+  .EtapeOne .complexe .complexe-container {
+    max-width: 100%;
+  }
+  .EtapeOne .complexe .complexe-container .complexe-left p {
+    top: 175px;
+    left: 90px;
+  }
+  .EtapeOne .complexe .complexe-container .complexe-right {
+    right: 0px;
+  }
+  .EtapeOne .complexe .complexe-container .complexe-right p {
+    width: 70px;
+    height: 12px;
+    top: 175px;
+    right: 160px;
+  }
+  .EtapeOne .complexe .complexe-container .complexe-square {
+    width: 570px;
+    top: 60px;
+    left: 50%;
+  }
+  .EtapeOne .complexe .Etape-text-2 {
+    width: 620px;
+    bottom: -30px;
+  }
+  .EtapeOne .Etape-product {
+    margin: 30px 0px 0px 0px;
+  }
+
+  .EtapeTwo .Etape-text-1 {
+    max-width: 100%;
+  }
+  .EtapeTwo .lextrailt {
+    max-width: 100%;
+  }
+  .EtapeTwo .lextrailt .lextrailt-container .lextrailt-left {
+    position: absolute;
+  }
+  .EtapeTwo .lextrailt .lextrailt-container .lextrailt-right img {
+    position: absolute;
+    top: 10px;
+    right: 0px;
+  }
+  .EtapeTwo .lextrailt .lextrailt-container .lextrailt-right p {
+    position: absolute;
+    bottom: 60px;
+    right: 10px;
+    font-family: GothamBook;
+    font-size: 12px;
+    color: #000000;
+  }
+  .EtapeTwo .lextrailt .lextrailt-container .lextrailt-square {
+    width: 570px;
+  }
+  .EtapeTwo .lextrailt .Etape-text-2 {
+    width: 520px;
+    left: 50%;
+    bottom: 40px;
+  }
+  .EtapeTwo .Etape-product .Etape-product-item {
+    padding: 30px 0px 40px 0px;
+  }
+  .EtapeTwo .Etape-product .Etape-product-item .Etape-text-3 {
+    width: 180px;
+  }
+  .EtapeTwo .Etape-product .Etape-product-item .Etape-text-4 {
+    width: 180px;
+  }
+  .EtapeTwo .Etape-product .Etape-product-item:last-of-type img {
+    margin: 24px 0px 0px 0px;
+  }
+
+  .EtapeThree .Etape-text-1 {
+    width: 100%;
+  }
+  .EtapeThree .complexe {
+    width: 100%;
+  }
+  .EtapeThree .complexe .complexe-container .complexe-square {
+    margin: 20px auto;
+    width: 570px;
+  }
+  .EtapeThree .complexe .Etape-text-2 {
+    width: 100%;
+  }
+}
+@media (max-width: 576px) {
+  .Etape {
+    max-width: 100%;
+    overflow: hidden;
+  }
+  .Etape .Etape-title {
+    width: 310px;
+    margin: 0px auto;
+    padding: 30px 0px 0px 0px;
+  }
+
+  .EtapeOne {
+    width: 100%;
+  }
+  .EtapeOne .Etape-text-1 {
+    text-align: inherit;
+  }
+  .EtapeOne .complexe .complexe-container {
+    width: 100%;
+    height: 300px;
+  }
+  .EtapeOne .complexe .complexe-container .complexe-left {
+    position: absolute;
+    left: -42px;
+  }
+  .EtapeOne .complexe .complexe-container .complexe-left p {
+    top: 198px;
+    left: 60px;
+  }
+  .EtapeOne .complexe .complexe-container .complexe-right {
+    top: 12px;
+    right: -60px;
+  }
+  .EtapeOne .complexe .complexe-container .complexe-right p {
+    width: 70px;
+    top: 185px;
+    right: 165px;
+  }
+  .EtapeOne .complexe .complexe-container .complexe-square {
+    width: 300px;
+    padding: 5px;
+  }
+  .EtapeOne .complexe .Etape-text-2 {
+    width: 100%;
+    bottom: -90px;
+  }
+  .EtapeOne .Etape-product {
+    padding: 60px 0px 0px 0px;
+  }
+
+  .EtapeTwo {
+    width: 100%;
+  }
+  .EtapeTwo .Etape-text-1 {
+    width: 310px;
+    margin: 15px auto;
+  }
+  .EtapeTwo .lextrailt {
+    width: 100%;
+    height: 300px;
+  }
+  .EtapeTwo .lextrailt .lextrailt-container .lextrailt-right img {
+    top: 40px;
+    right: 12px;
+    transform: rotate(45deg);
+  }
+  .EtapeTwo .lextrailt .lextrailt-container .lextrailt-right p {
+    bottom: 70px;
+  }
+  .EtapeTwo .lextrailt .lextrailt-container .lextrailt-square {
+    width: 300px;
+    top: 35px;
+    left: 50%;
+  }
+  .EtapeTwo .lextrailt .Etape-text-2 {
+    width: 375px;
+    left: 50%;
+    bottom: -70px;
+    transform: translateX(-50%);
+  }
+  .EtapeTwo .Etape-product {
+    padding: 80px 0px 0px 0px;
+  }
+  .EtapeTwo .Etape-product .Etape-product-4 img {
+    margin: 24px 0px 0px 0px;
+  }
+
+  .EtapeThree .Etape-text-1 {
+    width: 300px;
+    margin: 15px auto;
+  }
+  .EtapeThree .complexe {
+    width: 100%;
+  }
+  .EtapeThree .complexe .complexe-container .complexe-square {
+    width: 300px;
+  }
+  .EtapeThree .complexe .Etape-text-2 {
+    width: 100%;
+  }
+  .EtapeThree .Etape-product {
+    padding: 0px;
+  }
+}
+.LeDomaine {
+  max-width: 1024px;
+  height: 430px;
+  background-image: url("../images/Material_14.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  margin: 0px auto 280px auto;
+  position: relative;
+}
+.LeDomaine .LeDomaine-content {
+  width: 920px;
+  height: 500px;
+  background-color: #ffffff;
+  position: absolute;
+  top: 40%;
+  left: 50%;
+  transform: translate(-50%);
+}
+.LeDomaine .LeDomaine-content .LeDomaine-logo {
+  position: absolute;
+  top: 15px;
+  left: 50%;
+  transform: translate(-50%);
+}
+.LeDomaine .LeDomaine-content .LeDomaine-text-1 {
+  font-family: Clarins-Regular;
+  font-size: 35px;
+  color: #be0f34;
+  padding-top: 15px;
+  margin: 80px 0px 20px 0px;
+  text-align: center;
+}
+.LeDomaine .LeDomaine-content .LeDomaine-intro {
+  max-width: 920px;
+  height: 300px;
+  margin: 0px auto;
+  display: flex;
+  justify-content: space-between;
+}
+.LeDomaine .LeDomaine-content .LeDomaine-intro .LeDomaine-video {
+  width: 55%;
+  height: 300px;
+}
+.LeDomaine .LeDomaine-content .LeDomaine-intro .LeDomaine-video iframe {
+  width: 100%;
+  height: 300px;
+}
+.LeDomaine .LeDomaine-content .LeDomaine-intro .LeDomaine-txt {
+  width: 45%;
+  background-color: #fce292;
+  padding: 0px 20px;
+}
+.LeDomaine .LeDomaine-content .LeDomaine-intro .LeDomaine-txt p {
+  padding: 20px 0px 0px 0px;
+  font-family: GothamBook;
+  font-size: 16px;
+  color: #000000;
+  line-height: 22px;
+}
+
+@media (max-width: 768px) {
+  .LeDomaine {
+    width: 100%;
+  }
+  .LeDomaine .LeDomaine-content {
+    width: 100%;
+  }
+  .LeDomaine .LeDomaine-content .LeDomaine-intro {
+    width: 100%;
+  }
+  .LeDomaine .LeDomaine-content .LeDomaine-intro .LeDomaine-video iframe {
+    width: 100%;
+    height: 300px;
+  }
+  .LeDomaine .LeDomaine-content .LeDomaine-intro .LeDomaine-txt {
+    background-color: #fce292;
+    padding: 15px 15px 30px 15px;
+  }
+  .LeDomaine .LeDomaine-content .LeDomaine-intro .LeDomaine-txt p {
+    padding: 20px 0px 0px 0px;
+    font-family: GothamBook;
+    font-size: 16px;
+    color: #000000;
+    line-height: 22px;
+  }
+}
+@media (max-width: 576px) {
+  .LeDomaine {
+    width: 100%;
+    height: 460px;
+    background-image: url("../images/Material_Mobile_14.png");
+    margin: 0px auto 490px auto;
+  }
+  .LeDomaine .LeDomaine-content {
+    width: 100%;
+    height: 500px;
+  }
+  .LeDomaine .LeDomaine-content .LeDomaine-intro {
+    width: 100%;
+    display: block;
+  }
+  .LeDomaine .LeDomaine-content .LeDomaine-intro .LeDomaine-video {
+    width: 375px;
+    margin: 0px auto;
+  }
+  .LeDomaine .LeDomaine-content .LeDomaine-intro .LeDomaine-video iframe {
+    width: 100%;
+  }
+  .LeDomaine .LeDomaine-content .LeDomaine-intro .LeDomaine-txt {
+    width: 345px;
+    margin: 0px auto;
+    padding: 15px;
+  }
+  .LeDomaine .LeDomaine-content .LeDomaine-intro .LeDomaine-txt p {
+    padding-top: 10px;
+    text-align: center;
+  }
+}
+.Tout {
+  max-width: 1024px;
+  margin: 0 auto;
+}
+.Tout-container {
+  display: flex;
+  max-width: 920px;
+  margin: 0 auto;
+  padding: 30px 0 40px 0;
+}
+.Tout-container .Tout-content {
+  width: 55%;
+  margin-right: 40px;
+}
+.Tout-container .Tout-content-header {
+  display: flex;
+  justify-content: space-between;
+}
+.Tout-container .Tout-content-header p {
+  font-family: Clarins-Regular;
+  font-size: 35px;
+  color: #be0f34;
+}
+.Tout-container .Tout-content-text-1 {
+  padding-right: 50px;
+  font-family: GothamBook;
+  font-size: 16px;
+  color: #000000;
+  line-height: 20px;
+}
+.Tout-container .Tout-content-text-1:last-child {
+  margin-top: 25px;
+  background-color: #f0cfba;
+  padding: 25px 40px 25px 35px;
+}
+.Tout-container .Tout-content-text-1:last-child p {
+  margin-bottom: 20px;
+}
+.Tout-container .Tout-content-text-1:last-child span {
+  font-weight: bold;
+}
+.Tout-container .Tout-iframe {
+  width: 45%;
+}
+.Tout-container .Tout-iframe iframe {
+  width: 100%;
+  height: 100%;
+}
+
+@media (max-width: 768px) {
+  .Tout-container {
+    max-width: 720px;
+  }
+}
+@media (max-width: 576px) {
+  .Tout {
+    padding: 0 15px;
+  }
+  .Tout-container {
+    display: block;
+    text-align: center;
+  }
+  .Tout-container .Tout-content {
+    width: 100%;
+  }
+  .Tout-container .Tout-content-header {
+    display: block;
+  }
+  .Tout-container .Tout-content-header img {
+    display: none;
+  }
+  .Tout-container .Tout-content-text-1 {
+    padding: 25px 0;
+  }
+  .Tout-container .Tout-content-text-1:last-child {
+    margin-top: 0;
+  }
+  .Tout-container .Tout-iframe {
+    margin-top: 10px;
+    width: 100%;
+    height: 250px;
+  }
+}
